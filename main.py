@@ -1,4 +1,5 @@
 import streamlit as st
+import psutil
 
 st.set_page_config(
     page_title="Recommandation de Film",
@@ -23,3 +24,6 @@ pages = [
 # Activer la navigation
 pg = st.navigation(pages, position="sidebar", expanded=True)
 pg.run()
+
+st.sidebar.markdown("---")
+st.sidebar.write(f"🔍 RAM utilisée : {psutil.Process().memory_info().rss / 1e6:.2f} Mo")

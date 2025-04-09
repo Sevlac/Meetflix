@@ -1,0 +1,11 @@
+streamlit
+numpy
+pandas
+plotly
+seaborn
+scikit-learn
+setuptools
+streamlit_antd_components
+streamlit_jupyter
+requests
+folium
